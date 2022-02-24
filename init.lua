@@ -29,3 +29,5 @@ require "user.zen"
 -- vim.api.nvim_set_keymap("n", "<leader>sb", "<Plug>(SpotifyPrev)", { silent = true }) -- Go back to the previous track
 --
 -- require('competitest').setup()
+--
+-- make some keybindings for neogit
