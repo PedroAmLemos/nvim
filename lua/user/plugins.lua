@@ -67,6 +67,7 @@ return packer.startup(function(use)
   use "rmehri01/onenord.nvim"
   use "morhetz/gruvbox"
   use "rafamadriz/neon"
+  use "rebelot/kanagawa.nvim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp"
@@ -101,6 +102,7 @@ return packer.startup(function(use)
   use "tamago324/nlsp-settings.nvim"
   use "mfussenegger/nvim-jdtls"
   use "jose-elias-alvarez/null-ls.nvim"
+  use "simrat39/rust-tools.nvim"
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"

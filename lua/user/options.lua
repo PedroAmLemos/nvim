@@ -40,7 +40,7 @@ local options = {
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
-vim.opt.listchars:append("eol:↴")
+-- vim.opt.listchars:append("eol:↴")
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
