@@ -34,7 +34,7 @@ local options = {
   scrolloff = 8, -- is one of my fav
   sidescrolloff = 8,
   omnifunc = "v:lua.vim.lsp.omnifunc",
-  list = true,
+  -- list = true,
 }
 
 for k, v in pairs(options) do
