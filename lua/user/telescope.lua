@@ -9,7 +9,6 @@ local themes = require "telescope.themes"
 -- require('telescope').load_extension('octo')
 -- require('telescope').load_extension('project')
 telescope.load_extension "media_files"
-telescope.load_extension "ui-select"
 
 local mappings = {
   mappings = {
@@ -19,7 +18,6 @@ local mappings = {
 
       ["<C-j>"] = actions.move_selection_next,
       ["<C-k>"] = actions.move_selection_previous,
-
       ["<C-c>"] = actions.close,
 
       ["<Down>"] = actions.move_selection_next,
@@ -103,12 +101,11 @@ telescope.setup {
       override_file_sorter = true,
       case_mode = "smart_case",
     },
-    ui_select = {
-      require("telescope.themes").get_ivy {
-        winblend = 10,
+    ["ui-select"] = {
+      require("telescope.themes").get_dropdown {
+        layout_config = {width = 0.4, height = 0.4},
         border = true,
         previewer = false,
-        shorten_path = false,
       },
     },
     media_files = {
@@ -125,6 +122,8 @@ telescope.setup {
   --   }
   -- }
 }
+
+telescope.load_extension "ui-select"
 
 local builtin = require "telescope.builtin"
 local previewers = require "telescope.previewers"
