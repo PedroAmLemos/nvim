@@ -99,8 +99,8 @@ local mappings = {
     },
     k = { "<cmd>Bdelete!<CR>", "Kill Buffer" },
     s = { "<cmd>w!<CR>", "Save" },
-    v = { "<cmd>vs<CR>", "Vertical Split"},
-    h = { "<cmd>split<CR>", "Horizontal Split"},
+    v = { "<cmd>vs<CR>", "Vertical Split" },
+    h = { "<cmd>split<CR>", "Horizontal Split" },
   },
 
   p = {
@@ -159,7 +159,9 @@ local mappings = {
     },
     l = { "<cmd>lua vim.lsp.codelens.run()<cr>", "CodeLens Action" },
     q = { "<cmd>lua vim.diagnostic.setloclist()<cr>", "Quickfix" },
-    r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
+    -- r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
+    r = { "<cmd>lua require('renamer').rename()<cr>", "Rename" },
+    R = {"<cmd>Telescope lsp_references<CR>", "References"},
     s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
     S = {
       "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",
