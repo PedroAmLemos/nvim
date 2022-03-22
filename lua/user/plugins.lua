@@ -75,6 +75,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-path"
   use "hrsh7th/cmp-cmdline"
   use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-nvim-lsp-signature-help"
   use {
     "tzachar/cmp-tabnine",
     config = function()
@@ -91,6 +92,7 @@ return packer.startup(function(use)
   }
   use "hrsh7th/cmp-nvim-lua"
   use "saadparwaiz1/cmp_luasnip"
+  -- use {'ray-x/navigator.lua', requires = {'ray-x/guihua.lua', run = 'cd lua/fzy && make'}} -- better lsp ui
 
   -- snippets
   use "L3MON4D3/LuaSnip"
@@ -103,6 +105,11 @@ return packer.startup(function(use)
   use "mfussenegger/nvim-jdtls"
   use "jose-elias-alvarez/null-ls.nvim"
   use "simrat39/rust-tools.nvim"
+  use {
+    "filipdutescu/renamer.nvim",
+    branch = "master",
+    requires = { { "nvim-lua/plenary.nvim" } },
+  }
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
