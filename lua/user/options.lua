@@ -36,6 +36,7 @@ local options = {
   omnifunc = "v:lua.vim.lsp.omnifunc",
   -- list = true,
 }
+vim.g.snippets = "luasnip"
 
 for k, v in pairs(options) do
   vim.opt[k] = v

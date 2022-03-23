@@ -4,6 +4,7 @@ require "user.keymaps"
 require "user.plugins"
 require "user.colorscheme"
 require "user.cmp"
+require "user.luasnip"
 require "user.lsp"
 require "user.telescope"
 require "user.telescope-maps"
@@ -22,6 +23,8 @@ require "user.alpha"
 require "user.whichkey"
 require "user.zen"
 require "user.renamer"
+
+
 -- vim.api.nvim_set_keymap("n", "<leader>sn", "<Plug>(SpotifySkip)", { silent = true }) -- Skip the current track
 -- vim.api.nvim_set_keymap("n", "<leader>sp", "<Plug>(SpotifyPause)", { silent = true }) -- Pause/Resume the current track
 -- vim.api.nvim_set_keymap("n", "<leader>ss", "<Plug>(SpotifySave)", { silent = true }) -- Add the current track to your library
