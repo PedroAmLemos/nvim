@@ -161,7 +161,7 @@ local mappings = {
     q = { "<cmd>lua vim.diagnostic.setloclist()<cr>", "Quickfix" },
     -- r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
     r = { "<cmd>lua require('renamer').rename()<cr>", "Rename" },
-    R = {"<cmd>Telescope lsp_references<CR>", "References"},
+    R = {"<cmd>Telescope lsp_references theme=ivy<CR>", "References"},
     s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
     S = {
       "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",

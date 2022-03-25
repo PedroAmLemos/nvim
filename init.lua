@@ -23,6 +23,7 @@ require "user.alpha"
 require "user.whichkey"
 require "user.zen"
 require "user.renamer"
+require "user.symbols-outline"
 
 
 -- vim.api.nvim_set_keymap("n", "<leader>sn", "<Plug>(SpotifySkip)", { silent = true }) -- Skip the current track

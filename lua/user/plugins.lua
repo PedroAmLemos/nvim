@@ -59,6 +59,7 @@ return packer.startup(function(use)
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
+  use "navarasu/onedark.nvim"
   -- use "martinsione/darkplus.nvim"
   use "rose-pine/neovim"
   use "folke/tokyonight.nvim"
@@ -110,6 +111,7 @@ return packer.startup(function(use)
     branch = "master",
     requires = { { "nvim-lua/plenary.nvim" } },
   }
+  use "simrat39/symbols-outline.nvim"
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
