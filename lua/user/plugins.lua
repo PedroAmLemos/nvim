@@ -55,6 +55,7 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"
   use "lukas-reineke/indent-blankline.nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
+  use "rcarriga/nvim-notify"
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out

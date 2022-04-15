@@ -86,10 +86,11 @@ telescope.setup {
       "--line-number",
       "--column",
       "--smart-case",
+      "--hidden"
     },
     prompt_position = "bottom",
     prompt_prefix = " ",
-    file_ignore_patterns = { "undodir", "env", "__pycache__", "plugged", "undodir", "pack", ".cache" },
+    file_ignore_patterns = { "undodir", "env", "__pycache__", "plugged", "undodir", "pack", ".cache", ".git" },
     selection_caret = "  ",
     path_display = { "smart" },
     color_devicons = true,
@@ -116,7 +117,7 @@ telescope.setup {
     },
   },
   mappings = mappings,
-  --   pickers = {
+  -- pickers = {
   --     find_files = {
   --       hidden = true
   --   }

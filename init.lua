@@ -1,7 +1,7 @@
 --- requires
 require "user.options"
-require "user.keymaps"
 require "user.plugins"
+require "user.keymaps"
 require "user.colorscheme"
 require "user.cmp"
 require "user.luasnip"
@@ -24,3 +24,4 @@ require "user.whichkey"
 require "user.zen"
 require "user.renamer"
 require "user.symbols-outline"
+-- require "user.notify"

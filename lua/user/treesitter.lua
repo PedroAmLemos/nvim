@@ -34,7 +34,7 @@ end
 
 
 configs.setup {
-  ensure_installed = "maintained",
+  ensure_installed = "all",
 
   sync_install = false,
   -- ignore_install = {""},
@@ -57,7 +57,7 @@ configs.setup {
   },
 
   rainbow = {
-    enable = true,
+    enable = false,
     extended_mode = true, -- Highlight also non-parentheses delimiters, boolean or table: lang -> boolean
     max_file_lines = nil, -- Do not enable for files with more than 1000 lines, int
   },
